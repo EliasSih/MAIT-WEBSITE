@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>MAIT AS-level</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Ubuntu:wght@500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid sticky-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark p-0">
+                <a href="index.html" class="navbar-brand">
+                    <h1 class="text-white">MAIT<span class="text-dark">.</span></h1>
+                </a>
+                <button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse"
+                    data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto">
+                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        <a href="router-level.html" class="nav-item nav-link">Router-level</a>
+                        <a href="as-level.html" class="nav-item nav-link active">AS-level</a>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Hero Start -->
+    <div class="container-fluid bg-primary hero-header">
+        <div class="container pt-5">
+            <div class="row g-5 pt-5">
+                <div class="align-self-center text-center mb-lg-5">
+                    <h1 class="display-4 text-white mb-4 animated slideInRight">Mapping African Internet Topology at AS Level</h1>
+                    <h4 class="text-white mb-4">By Houston Yu</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Hero End -->
+
+    <!-- Service Start -->
+    <div class="container-fluid bg-white py-5">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <h1>Background and Introduction</h1>
+                <p class="mb-4">Over the past few years, the internet has continued to 
+                    evolve and expand, which is why it is extremely 
+                    important to understand the underlying infrastructures 
+                    that support it. In order to understand the complexity 
+                    of the internet, mapping the logical and physical 
+                    topology of internet infrastructures and visualizing 
+                    them can provide valuable information into the 
+                    network’s performance and potential bottlenecks</p>
+                <h1>Problem Statement</h1>
+                <p>Although various visualization platforms are 
+                    constantly being developed and refined for internet 
+                    topology visualization, there is still a need for further 
+                    research into the internet topology of Africa. This is 
+                    mainly due to little research being done in 
+                    visualizations tools specifically for the African 
+                    Internet topology. The tools that have been described 
+                    in previous research do not effectively communicate 
+                    the interconnections in the African internet topology. 
+                    Mapping the internet topology in Africa presents 
+                    unique challenges due to Africa’s limited internet 
+                    infrastructures and diverse geography. Therefore, 
+                    it is necessary to collect BGP datasets and traceroute 
+                    measurements for logical topology discovery and use 
+                    it to infer and visualize the relationships between 
+                    networks and countries across Africa </p>
+                <p>By visualizing the relationships between networks in 
+                    Africa; network experts or users who are interested in 
+                    internet networks can learn more about their ISPs. 
+                    Such a visualization would be useful in identifying 
+                    what kind of relationships do their ISPs have with 
+                    other ISPs and at which internet exchange point (IXP) 
+                    do they exchange data with each other.</p>
+                <h1>Research Aim</h1>
+                <p>Many researchers have tried to use various techniques 
+                    and datasets such as Border Gateway Protocol (BGP) 
+                    datasets and traceroute measurements to map internet 
+                    topology and visualize the relationships between 
+                    internet service providers (ISPs) across the world. 
+                    Despite various approaches to mapping internet 
+                    topology, the visualization platforms that have been 
+                    developed in previous research are difficult to use and 
+                    users often struggle to understand the data that are 
+                    being visualized due to its complicated nature. One 
+                    of the possible reasons for this is most of the 
+                    visualization tools focus more on how appealing the 
+                    visualizations should be instead of presenting useful 
+                    information to the viewers. Another possible reason is 
+                    that some visualization tools lack essential features 
+                    such as allowing the viewers to filter and find what 
+                    they want to see. These flaws have either made the 
+                    visualization tools to become less useful or difficult to 
+                    comprehend.</p> 
+                    
+                    <p>The purpose of visualization tools is to present 
+                    information in a visual and interactive manner. 
+                    The visualizations should allow users to extract useful 
+                    information easily such as identifying the ISPs and the 
+                    relationships between ISPs. Such visualizations should 
+                    also be simple and easy to use, especially for users 
+                    who have never used any visualization tools before.
+                    The following research question has been formulated 
+                    for this project: How can the visualization of 
+                    interconnections between ISPs effectively 
+                    communicate the AS level internet topology of Africa, 
+                    allowing users to identify ISPs, exchange points and 
+                    peering links, and how the visualization is able to 
+                    improve its usability and accuracy to extract useful 
+                    information?</p>
+                <h1>Results</h1>
+                <p>The accuracy of visual queries is determined by 
+                    whether participants can answer questions related to 
+                    the visual queries correctly. If participants are able to 
+                    answer the questions correctly, they have successfully 
+                    performed the given tasks. </p>
+                
+                <p>In figure 1, results showed that participants were able 
+                    to determine which node is AS or IXP in the topology 
+                    visualization with 100% accuracy. Another visual 
+                    query achieved 100% accuracy is identifying the type 
+                    of relationships each AS may have. However, the last 
+                    visual query was answered with less accuracy which 
+                    only had 88.8% accuracy.</p>
+                
+                <p>All the participants were able to answer the first two 
+                    visual queries (Visual query 1 and 2) without any 
+                    issues. This is because the answers to visual query 1 
+                    and 2 focus on the use of colours in the visualization. 
+                    However, for visual query 3, participants find it difficult
+                    to determine the number of customers for a particular AS due
+                    to the size of nodes.</p>
+
+                <div class="image-container">
+                    <img src="./img/VisualQueries.JPG" class="image">                                  
+                </div>
+
+                <p>Figure 2 shows that task 3 (Search for a specific AS) 
+                    and task 4 (Zoom into AS by clicking on AS name in 
+                    the list) had 100% successful task completion while 
+                    task 1 and 2 nearly achieved 100% successful task 
+                    completion. In comparison to these tasks, task 5 has 
+                    the lowest completion percentage. This is understandable since task 5 needs to answer visual 
+                    query 3 in figure 4.</p>
+                
+                <P>Tasks 3 and 4 were easy to perform due to the simple 
+                    tasks that each participant needed to perform. The reasons for the lower completion percentage for 
+                    tasks 1 and 2 are interactivity issues. These tasks 
+                    require participants to interact with the nodes in the 
+                    visualization. In task 5, participants were tasked with finding the AS 
+                    with most customers (largest node). This resulted in a 
+                    few responses where participants struggled to find AS 
+                    with most customers. </P>
+
+                <div class="image-container">
+                    <img src="./img/SuccessfulTasks.JPG" class="image">                                 
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="align-self-center text-center mb-lg-5">
+                <h2 class="text-black mb-2">Downloads</h2>
+                <p class="text-black mb-4">Project Resources</p>
+                <p class="text-black mb-4">Please find the links for the project resources relavant to Houston's work</p>
+            
+                <ul class="custom-list">
+                    <li><a href="" class="icon-button">
+                        <img alt="download icon" src="./img/document.png" width="20" height="20" />Literature Review</a></li>
+                    <li><a href="" class="icon-button">
+                        <img alt="download button" src="./img/document.png" width="20" height="20" />Project Paper</a></li>
+                    <li>
+                        <a href="https://github.com/MisterQi17/MAIT" class="icon-button">
+                            <img alt="github icon" src="./img/github.png" width="20" height="20" />Project Code
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+    
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-white-50 footer pt-5">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.1s">
+                    <img src="./img/UCT logo circular white large.png" width="200" height="200">
+                </div>
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.3s">
+                    <h5 class="text-white mb-4">University of Cape Town</h5>
+                    <p><i class="fa fa-map-marker-alt me-3"></i>Computer Science Department</p>
+                    <p><i class="fa fa-phone-alt me-3"></i>021 650 2663</p>
+                    <p><i class="fa fa-envelope me-3"></i>dept@cs.uct.ac.za</p>
+                </div>
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.5s">
+                    <h5 class="text-white mb-4">Team Members</h5>
+                    <p>Houston Yu (yxxcha002@myuct.ac.za)</p>
+                    <p>Elias Sihlangu (shlmag002@myuct.ac.za)</p>
+                </div>
+                <div class="col-md-6 col-lg-2 wow fadeIn" data-wow-delay="0.7s">
+                    <h5 class="text-white mb-4">Supervisor</h5>
+                    <p>Josiah Chavula (josiah.chavula@uct.ac.za)</p>
+                </div>
+                <div class="col-md-6 col-lg-1 wow fadeIn" data-wow-delay="0.1s">
+                    <img src="./img/logo_computer_science.png" width="200" height="200">
+                </div>
+            </div>
+        </div>
+        <div class="container wow fadeIn" data-wow-delay="0.1s">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                        Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a> Distributed By <a class="border-bottom" href="https://themewagon.com">ThemeWagon</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top pt-2"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
