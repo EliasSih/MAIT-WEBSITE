@@ -538,3 +538,40 @@ h6,
     padding-right: 0;
     border-right: none;
 }
+
+.image-container {
+    display: flex; /* Use flexbox to place the images side by side */
+    justify-content: center; /* Center horizontally */
+    align-items: center;
+}
+
+.image {
+    width: 50%; /* Set the width of each image to 50% to make them equal in size and side by side */
+    height: auto; 
+    margin: 10px;
+}
+
+.button-container {
+    display: flex; /* Use flexbox to arrange buttons horizontally */
+    gap: 10px; /* Add some space between buttons (adjust as needed) */
+    justify-content: center; /* Center horizontally */
+    align-items: center;
+}
+
+.icon-button {
+    background-color: #00baf3; /* Blue background color */
+    color: #ffffff; /* White text color */
+    padding: 10px 20px; /* Padding to adjust button size */
+    border: none; /* Remove the border */
+    border-radius: 5px; /* Add some border-radius for rounded corners */
+}
+
+.custom-list {
+    list-style: none; /* Remove default list styles (bullets or numbers) */
+    padding: 0; /* Remove default list padding */
+}
+
+.custom-list li {
+    display: inline-block; /* Place list items next to each other */
+    margin-right: 10px; /* Add some space between list items (adjust as needed) */
+}
