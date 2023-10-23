@@ -57,8 +57,9 @@
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto">
                         <a href="index.html" class="nav-item nav-link">Home</a>
-                        <a href="router-level.html" class="nav-item nav-link">Router-level</a>
+                        <a href="router-level.html" class="nav-item nav-link active">Router-level</a>
                         <a href="as-level.html" class="nav-item nav-link active">AS-level</a>
+
                 </div>
             </nav>
         </div>
@@ -84,120 +85,120 @@
         <div class="container py-5">
             <div class="row align-items-center">
                 <h1>Background and Introduction</h1>
-                <p class="mb-4">Over the past few years, the internet has continued to 
-                    evolve and expand, which is why it is extremely 
-                    important to understand the underlying infrastructures 
-                    that support it. In order to understand the complexity 
-                    of the internet, mapping the logical and physical 
-                    topology of internet infrastructures and visualizing 
-                    them can provide valuable information into the 
+                <p class="mb-4">Over the past few years, the internet has continued to
+                    evolve and expand, which is why it is extremely
+                    important to understand the underlying infrastructures
+                    that support it. In order to understand the complexity
+                    of the internet, mapping the logical and physical
+                    topology of internet infrastructures and visualizing
+                    them can provide valuable information into the
                     network’s performance and potential bottlenecks</p>
                 <h1>Problem Statement</h1>
-                <p>Although various visualization platforms are 
-                    constantly being developed and refined for internet 
-                    topology visualization, there is still a need for further 
-                    research into the internet topology of Africa. This is 
-                    mainly due to little research being done in 
-                    visualizations tools specifically for the African 
-                    Internet topology. The tools that have been described 
-                    in previous research do not effectively communicate 
-                    the interconnections in the African internet topology. 
-                    Mapping the internet topology in Africa presents 
-                    unique challenges due to Africa’s limited internet 
-                    infrastructures and diverse geography. Therefore, 
-                    it is necessary to collect BGP datasets and traceroute 
-                    measurements for logical topology discovery and use 
-                    it to infer and visualize the relationships between 
+                <p>Although various visualization platforms are
+                    constantly being developed and refined for internet
+                    topology visualization, there is still a need for further
+                    research into the internet topology of Africa. This is
+                    mainly due to little research being done in
+                    visualizations tools specifically for the African
+                    Internet topology. The tools that have been described
+                    in previous research do not effectively communicate
+                    the interconnections in the African internet topology.
+                    Mapping the internet topology in Africa presents
+                    unique challenges due to Africa’s limited internet
+                    infrastructures and diverse geography. Therefore,
+                    it is necessary to collect BGP datasets and traceroute
+                    measurements for logical topology discovery and use
+                    it to infer and visualize the relationships between
                     networks and countries across Africa </p>
-                <p>By visualizing the relationships between networks in 
-                    Africa; network experts or users who are interested in 
-                    internet networks can learn more about their ISPs. 
-                    Such a visualization would be useful in identifying 
-                    what kind of relationships do their ISPs have with 
-                    other ISPs and at which internet exchange point (IXP) 
+                <p>By visualizing the relationships between networks in
+                    Africa; network experts or users who are interested in
+                    internet networks can learn more about their ISPs.
+                    Such a visualization would be useful in identifying
+                    what kind of relationships do their ISPs have with
+                    other ISPs and at which internet exchange point (IXP)
                     do they exchange data with each other.</p>
                 <h1>Research Aim</h1>
-                <p>Many researchers have tried to use various techniques 
-                    and datasets such as Border Gateway Protocol (BGP) 
-                    datasets and traceroute measurements to map internet 
-                    topology and visualize the relationships between 
-                    internet service providers (ISPs) across the world. 
-                    Despite various approaches to mapping internet 
-                    topology, the visualization platforms that have been 
-                    developed in previous research are difficult to use and 
-                    users often struggle to understand the data that are 
-                    being visualized due to its complicated nature. One 
-                    of the possible reasons for this is most of the 
-                    visualization tools focus more on how appealing the 
-                    visualizations should be instead of presenting useful 
-                    information to the viewers. Another possible reason is 
-                    that some visualization tools lack essential features 
-                    such as allowing the viewers to filter and find what 
-                    they want to see. These flaws have either made the 
-                    visualization tools to become less useful or difficult to 
-                    comprehend.</p> 
-                    
-                    <p>The purpose of visualization tools is to present 
-                    information in a visual and interactive manner. 
-                    The visualizations should allow users to extract useful 
-                    information easily such as identifying the ISPs and the 
-                    relationships between ISPs. Such visualizations should 
-                    also be simple and easy to use, especially for users 
+                <p>Many researchers have tried to use various techniques
+                    and datasets such as Border Gateway Protocol (BGP)
+                    datasets and traceroute measurements to map internet
+                    topology and visualize the relationships between
+                    internet service providers (ISPs) across the world.
+                    Despite various approaches to mapping internet
+                    topology, the visualization platforms that have been
+                    developed in previous research are difficult to use and
+                    users often struggle to understand the data that are
+                    being visualized due to its complicated nature. One
+                    of the possible reasons for this is most of the
+                    visualization tools focus more on how appealing the
+                    visualizations should be instead of presenting useful
+                    information to the viewers. Another possible reason is
+                    that some visualization tools lack essential features
+                    such as allowing the viewers to filter and find what
+                    they want to see. These flaws have either made the
+                    visualization tools to become less useful or difficult to
+                    comprehend.</p>
+
+                    <p>The purpose of visualization tools is to present
+                    information in a visual and interactive manner.
+                    The visualizations should allow users to extract useful
+                    information easily such as identifying the ISPs and the
+                    relationships between ISPs. Such visualizations should
+                    also be simple and easy to use, especially for users
                     who have never used any visualization tools before.
-                    The following research question has been formulated 
-                    for this project: How can the visualization of 
-                    interconnections between ISPs effectively 
-                    communicate the AS level internet topology of Africa, 
-                    allowing users to identify ISPs, exchange points and 
-                    peering links, and how the visualization is able to 
-                    improve its usability and accuracy to extract useful 
+                    The following research question has been formulated
+                    for this project: How can the visualization of
+                    interconnections between ISPs effectively
+                    communicate the AS level internet topology of Africa,
+                    allowing users to identify ISPs, exchange points and
+                    peering links, and how the visualization is able to
+                    improve its usability and accuracy to extract useful
                     information?</p>
                 <h1>Results</h1>
-                <p>The accuracy of visual queries is determined by 
-                    whether participants can answer questions related to 
-                    the visual queries correctly. If participants are able to 
-                    answer the questions correctly, they have successfully 
+                <p>The accuracy of visual queries is determined by
+                    whether participants can answer questions related to
+                    the visual queries correctly. If participants are able to
+                    answer the questions correctly, they have successfully
                     performed the given tasks. </p>
-                
-                <p>In figure 1, results showed that participants were able 
-                    to determine which node is AS or IXP in the topology 
-                    visualization with 100% accuracy. Another visual 
-                    query achieved 100% accuracy is identifying the type 
-                    of relationships each AS may have. However, the last 
-                    visual query was answered with less accuracy which 
+
+                <p>In figure 1, results showed that participants were able
+                    to determine which node is AS or IXP in the topology
+                    visualization with 100% accuracy. Another visual
+                    query achieved 100% accuracy is identifying the type
+                    of relationships each AS may have. However, the last
+                    visual query was answered with less accuracy which
                     only had 88.8% accuracy.</p>
-                
-                <p>All the participants were able to answer the first two 
-                    visual queries (Visual query 1 and 2) without any 
-                    issues. This is because the answers to visual query 1 
-                    and 2 focus on the use of colours in the visualization. 
+
+                <p>All the participants were able to answer the first two
+                    visual queries (Visual query 1 and 2) without any
+                    issues. This is because the answers to visual query 1
+                    and 2 focus on the use of colours in the visualization.
                     However, for visual query 3, participants find it difficult
                     to determine the number of customers for a particular AS due
                     to the size of nodes.</p>
 
                 <div class="image-container">
-                    <img src="./img/VisualQueries.JPG" class="image">                                  
+                    <img src="./img/VisualQueries.JPG" class="image">
                 </div>
 
-                <p>Figure 2 shows that task 3 (Search for a specific AS) 
-                    and task 4 (Zoom into AS by clicking on AS name in 
-                    the list) had 100% successful task completion while 
-                    task 1 and 2 nearly achieved 100% successful task 
-                    completion. In comparison to these tasks, task 5 has 
-                    the lowest completion percentage. This is understandable since task 5 needs to answer visual 
+                <p>Figure 2 shows that task 3 (Search for a specific AS)
+                    and task 4 (Zoom into AS by clicking on AS name in
+                    the list) had 100% successful task completion while
+                    task 1 and 2 nearly achieved 100% successful task
+                    completion. In comparison to these tasks, task 5 has
+                    the lowest completion percentage. This is understandable since task 5 needs to answer visual
                     query 3 in figure 4.</p>
-                
-                <P>Tasks 3 and 4 were easy to perform due to the simple 
-                    tasks that each participant needed to perform. The reasons for the lower completion percentage for 
-                    tasks 1 and 2 are interactivity issues. These tasks 
-                    require participants to interact with the nodes in the 
-                    visualization. In task 5, participants were tasked with finding the AS 
-                    with most customers (largest node). This resulted in a 
-                    few responses where participants struggled to find AS 
+
+                <P>Tasks 3 and 4 were easy to perform due to the simple
+                    tasks that each participant needed to perform. The reasons for the lower completion percentage for
+                    tasks 1 and 2 are interactivity issues. These tasks
+                    require participants to interact with the nodes in the
+                    visualization. In task 5, participants were tasked with finding the AS
+                    with most customers (largest node). This resulted in a
+                    few responses where participants struggled to find AS
                     with most customers. </P>
 
                 <div class="image-container">
-                    <img src="./img/SuccessfulTasks.JPG" class="image">                                 
+                    <img src="./img/SuccessfulTasks.JPG" class="image">
                 </div>
             </div>
         </div>
@@ -206,7 +207,7 @@
                 <h2 class="text-black mb-2">Downloads</h2>
                 <p class="text-black mb-4">Project Resources</p>
                 <p class="text-black mb-4">Please find the links for the project resources relavant to Houston's work</p>
-            
+
                 <ul class="custom-list">
                     <li><a href="./files/Final Literature Review YXXCHA002.pdf" class="icon-button">
                         <img alt="download icon" src="./img/document.png" width="20" height="20" />Literature Review</a></li>
@@ -223,7 +224,7 @@
         </div>
     </div>
     <!-- Service End -->
-    
+
 
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-white-50 footer pt-5">
